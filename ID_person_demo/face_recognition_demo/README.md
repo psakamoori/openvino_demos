@@ -3,6 +3,7 @@ Sample command line to run ID_person_demo
 
 ## Command options
 
+```sh 
 optional arguments:
   -h, --help            show this help message and exit
 
@@ -52,10 +53,12 @@ Inference options:
   -t_fd [0..1]          Optional. Probability threshold for face detections.
   -t_id [0..1]          Optional. Cosine distance threshold between two vectors for face identification.
   -exp_r_fd NUMBER      Optional. Scaling ratio for bboxes passed to face recognition.
-
+```
 
 
 ## Command line
-application$ python3 face_recognition_demo.py -m_fd ./intel/face-detection-retail-0004/FP32/face-detection-retail-0004.xml -m_lm ./intel/landmarks-regression-retail-0009/FP32/landmarks-regression-retail-0009.xml -m_reid ./intel/face-reidentification-retail-0095/FP32/face-reidentification-retail-0095.xml -d_fd CPU -d_lm CPU -d_reid CPU -i 0 
 
+```sh
+application$ python3 face_recognition_demo.py -m_fd ./intel/face-detection-retail-0004/FP32/face-detection-retail-0004.xml -m_lm ./intel/landmarks-regression-retail-0009/FP32/landmarks-regression-retail-0009.xml -m_reid ./intel/face-reidentification-retail-0095/FP32/face-reidentification-retail-0095.xml -d_fd CPU -d_lm CPU -d_reid CPU -i 0 
+```
 
