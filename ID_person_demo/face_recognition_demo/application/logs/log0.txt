@@ -1,0 +1,68 @@
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python$ omz_downloader --name face-reidentification-retail-0095
+[ WARNING ] Telemetry will not be sent as TID is not specified.
+################|| Downloading face-reidentification-retail-0095 ||################
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/face-reidentification-retail-0095/FP32/face-reidentification-retail-0095.xml
+... 100%, 233 KB, 1040 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/face-reidentification-retail-0095/FP32/face-reidentification-retail-0095.bin
+... 100%, 4323 KB, 4135 KB/s, 1 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/face-reidentification-retail-0095/FP16/face-reidentification-retail-0095.xml
+... 100%, 233 KB, 562 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/face-reidentification-retail-0095/FP16/face-reidentification-retail-0095.bin
+... 100%, 2161 KB, 7867 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/face-reidentification-retail-0095/FP16-INT8/face-reidentification-retail-0095.xml
+... 100%, 643 KB, 993 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/face-reidentification-retail-0095/FP16-INT8/face-reidentification-retail-0095.bin
+... 100%, 1153 KB, 1620 KB/s, 0 seconds passed
+
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python$ omz_downloader --name face-detection-retail-0004
+[ WARNING ] Telemetry will not be sent as TID is not specified.
+################|| Downloading face-detection-retail-0004 ||################
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/face-detection-retail-0004/FP32/face-detection-retail-0004.xml
+... 100%, 103 KB, 1095 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/face-detection-retail-0004/FP32/face-detection-retail-0004.bin
+... 100%, 2297 KB, 2989 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/face-detection-retail-0004/FP16/face-detection-retail-0004.xml
+... 100%, 103 KB, 487 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/face-detection-retail-0004/FP16/face-detection-retail-0004.bin
+... 100%, 1148 KB, 2235 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/face-detection-retail-0004/FP16-INT8/face-detection-retail-0004.xml
+... 100%, 235 KB, 733 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/face-detection-retail-0004/FP16-INT8/face-detection-retail-0004.bin
+... 100%, 586 KB, 1108 KB/s, 0 seconds passed
+
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python$ omz_downloader^C-name face-detection-retail-0004
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python$ omz_downloader --name landmarks-regression-retail-0009
+[ WARNING ] Telemetry will not be sent as TID is not specified.
+################|| Downloading landmarks-regression-retail-0009 ||################
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/landmarks-regression-retail-0009/FP32/landmarks-regression-retail-0009.xml
+... 100%, 43 KB, 2804 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/landmarks-regression-retail-0009/FP32/landmarks-regression-retail-0009.bin
+... 100%, 744 KB, 1815 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/landmarks-regression-retail-0009/FP16/landmarks-regression-retail-0009.xml
+... 100%, 43 KB, 441 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/landmarks-regression-retail-0009/FP16/landmarks-regression-retail-0009.bin
+... 100%, 372 KB, 958 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/landmarks-regression-retail-0009/FP16-INT8/landmarks-regression-retail-0009.xml
+... 100%, 86 KB, 284 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/open_model_zoo/demos/face_recognition_demo/python/intel/landmarks-regression-retail-0009/FP16-INT8/landmarks-regression-retail-0009.bin
+... 100%, 191 KB, 538 KB/s, 0 seconds passed
+
+
