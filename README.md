@@ -31,6 +31,6 @@ clinfo
 ```
 ## Refer below README.md to run listed demos
 
-- [Instructions to run Safety_grear_detector] (https://github.com/psakamoori/openvino_demos/blob/master/safety_gear_detector/application/README.md)
-- [Instructions to run ID_person_demo] (https://github.com/psakamoori/openvino_demos/blob/master/ID_person_demo/face_recognition_demo/README.md)
-- [Instruction to run restricted_zone_notifier] (https://github.com/psakamoori/openvino_demos/blob/master/restricted_zone_notifier/application/README.md)
+- [Instructins to run Safety_gear_detector](https://github.com/psakamoori/openvino_demos/blob/master/safety_gear_detector/application/README.md)
+- [Instructions to run ID_person_demo](https://github.com/psakamoori/openvino_demos/blob/master/ID_person_demo/face_recognition_demo/README.md)
+- [Instruction to run restricted_zone_notifier](https://github.com/psakamoori/openvino_demos/blob/master/restricted_zone_notifier/application/README.md)
