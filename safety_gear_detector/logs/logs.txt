@@ -1,0 +1,102 @@
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python$ omz_downloader --name person-detection-retail-0013
+[ WARNING ] Telemetry will not be sent as TID is not specified.
+
+################|| Downloading person-detection-retail-0013 ||################
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml
+... 100%, 374 KB, 1065 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel/person-detection-retail-0013/FP32/person-detection-retail-0013.bin
+... 100%, 2823 KB, 3124 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel/person-detection-retail-0013/FP16/person-detection-retail-0013.xml
+... 100%, 373 KB, 859 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel/person-detection-retail-0013/FP16/person-detection-retail-0013.bin
+... 100%, 1411 KB, 1836 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel/person-detection-retail-0013/FP16-INT8/person-detection-retail-0013.xml
+... 100%, 948 KB, 1651 KB/s, 0 seconds passed
+
+========== Downloading /home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel/person-detection-retail-0013/FP16-INT8/person-detection-retail-0013.bin
+... 100%, 752 KB, 1596 KB/s, 0 seconds passed
+
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python$ 
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python$ ls
+application  docs  intel  Jupyter  LICENSE  README.md  resources  setup.sh
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python$ cd application/
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/application$ ls
+inference.py  safety_gear_detector.py
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/application$ vi inference.py 
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/application$ python3 safety_gear_detector.py --help
+usage: safety_gear_detector.py [-h] [-d DEVICE] -m MODEL [-sm SAFETY_MODEL] [-e CPU_EXTENSION] [-f FLAG]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DEVICE, --device DEVICE
+                        Specify the target device to infer on; CPU, GPU,FPGA, MYRIAD or HDDL is acceptable. Application willlook for a suitable plugin for device specified (CPU by default)
+  -m MODEL, --model MODEL
+                        Path to an .xml file with a trained model's weights.
+  -sm SAFETY_MODEL, --safety_model SAFETY_MODEL
+                        Path to an .xml file with a trained model's weights.
+  -e CPU_EXTENSION, --cpu_extension CPU_EXTENSION
+                        MKLDNN (CPU)-targeted custom layers. Absolute path to a shared library with the kernels impl
+  -f FLAG, --flag FLAG  sync or async
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/application$ python3 safety_gear_detector.py -d CPU -m ../intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml ^C
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/application$ ^C
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/application$ vi ../setup.sh 
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/application$ cd ../../..
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte$ ls
+Demo_ref  Dockerfile  iot_dev_kits  open_model_zoo  OpenVINO_DemoSamples
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte$ cd OpenVINO_DemoSamples/
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/OpenVINO_DemoSamples$ ls
+DEMO.txt  faces  ID_person_demo  restricted_zone  safety_gear
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/OpenVINO_DemoSamples$ cd safety_gear/
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/OpenVINO_DemoSamples/safety_gear$ ls
+application  intel  resources  setup.sh
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/OpenVINO_DemoSamples/safety_gear$ cd intel/
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/OpenVINO_DemoSamples/safety_gear/intel$ ls
+person-detection-retail-0013
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/OpenVINO_DemoSamples/safety_gear/intel$ cd ..
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/OpenVINO_DemoSamples/safety_gear$ cd resources/
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/OpenVINO_DemoSamples/safety_gear/resources$ ls
+config1_json  config.json  worker-safety-mobilenet
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/OpenVINO_DemoSamples/safety_gear/resources$ cp -r worker-safety-mobilenet/ ../../../iot_dev_kits/safety-gear-detector-python/intel/.
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/OpenVINO_DemoSamples/safety_gear/resources$ cd ../../../iot_dev_kits/safety-gear-detector-python/
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python$ cd intel/
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel$ ls
+person-detection-retail-0013  worker-safety-mobilenet
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel$ cd worker-safety-mobilenet/
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel/worker-safety-mobilenet$ ls
+FP16  FP32  worker_safety_mobilenet.caffemodel  worker_safety_mobilenet.prototxt
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel/worker-safety-mobilenet$ cd FP
+bash: cd: FP: No such file or directory
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel/worker-safety-mobilenet$ cd FP32/
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel/worker-safety-mobilenet/FP32$ ls
+worker_safety_mobilenet.bin  worker_safety_mobilenet.mapping.xml  worker_safety_mobilenet.xml
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel/worker-safety-mobilenet/FP32$ cd ../..
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/intel$ cd ..
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python$ cd application/
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/application$ python3 safety_gear_detector.py -d CPU -m ./intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -sm ./intel/worker-safety-mobilenet/FP32/worker_safety_mobilenet.xml 
+Application running in Async mode
+Traceback (most recent call last):
+  File "safety_gear_detector.py", line 464, in <module>
+    main()
+  File "safety_gear_detector.py", line 272, in main
+    infer_network.load_model(conf_modelLayers, targetDevice, 1, 1, 2, cpu_extension)
+  File "/home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/application/inference.py", line 73, in load_model
+    self.net =  self.plugin.read_network(model=model_xml, weights=model_bin) #IENetwork(model=model_xml, weights=model_bin)
+  File "ie_api.pyx", line 357, in openvino.inference_engine.ie_api.IECore.read_network
+  File "ie_api.pyx", line 391, in openvino.inference_engine.ie_api.IECore.read_network
+Exception: Path to the model ./intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml doesn't exist or it's a directory
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/application$ python3 safety_gear_detector.py -d CPU -m ../intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -sm ../intel/worker-safety-mobilenet/FP32/worker_safety_mobilenet.xml 
+Application running in Async mode
+Traceback (most recent call last):
+  File "safety_gear_detector.py", line 464, in <module>
+    main()
+  File "safety_gear_detector.py", line 272, in main
+    infer_network.load_model(conf_modelLayers, targetDevice, 1, 1, 2, cpu_extension)
+  File "/home/psakamoori/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/application/inference.py", line 79, in load_model
+    [l for l in self.net.layers.keys() if l not in supported_layers]
+AttributeError: 'openvino.inference_engine.ie_api.IENetwork' object has no attribute 'layers'
+(ov21lts) psakamoori@pvlab:~/EdgeAI/Deloitte/iot_dev_kits/safety-gear-detector-python/application$ python3 safety_gear_detector.py -d CPU -m ../intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -sm ../intel/worker-safety-mobilenet/FP32/worker_safety_mobilenet.xml
