@@ -33,5 +33,8 @@ optional arguments:
 ## Sample Command line:
 
 ```sh
-application$  python3 restricted_zone_notifier.py -m ./intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -d CPU
+(openvino_env) [ubuntu:~/openvino_demos/restricted_zone_notifier/application/]$  
+python3 restricted_zone_notifier.py \
+-m ./intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml \
+-d CPU
 ```

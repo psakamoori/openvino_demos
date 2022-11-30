@@ -23,7 +23,11 @@ optional arguments:
 ## Sample Command line:
 
 ```sh
-application: python3 safety_gear_detector.py -d CPU -m ../intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml -sm ../intel/worker-safety-mobilenet/FP32/worker_safety_mobilenet.xml
+(openvino_env) [ubuntu:~/openvino_demos/safety_gear_detector/application]$ 
+python3 safety_gear_detector.py \
+-d CPU \
+-m ../intel/person-detection-retail-0013/FP32/person-detection-retail-0013.xml \
+-sm ../intel/worker-safety-mobilenet/FP32/worker_safety_mobilenet.xml
 
 ```
 
