@@ -66,7 +66,7 @@ cd openvino_demos
 
 ## Instructions for Demo 1: ID_person_demo
 
-See more detailed `ID_person_demo` [README Here](https://github.com/psakamoori/openvino_demos/blob/master/ID_person_demo/face_recognition_demo/application/README.md)
+See more detailed `ID_person_demo` [README Here](https://github.com/psakamoori/openvino_demos/blob/main/ID_person_demo/face_recognition_demo/application/README.md)
 
 ```sh
 # Assuming you activated openvino_env virtual env and inside openvino_demos directory.
@@ -87,7 +87,7 @@ python3 face_recognition_demo.py \
 
 ## Instructions for Demo 2: restricted_zone_notifier
 
-See more detailed `restricted_zone_notifier` demo [README Here](https://github.com/psakamoori/openvino_demos/blob/master/restricted_zone_notifier/application/README.md)
+See more detailed `restricted_zone_notifier` demo [README Here](https://github.com/psakamoori/openvino_demos/blob/main/restricted_zone_notifier/application/README.md)
 ```sh
 # Assuming you activated openvino_env virtual env and inside openvino_demos directory.
 (openvino_env) [ubuntu:~/openvino_demos]$
@@ -102,7 +102,7 @@ python3 restricted_zone_notifier.py \
 
 ## Instructions for Demo 3: safety_gear_detector
 
-See more detailed `safety_gear_detector` demo [README Here](https://github.com/psakamoori/openvino_demos/blob/master/safety_gear_detector/application/README.md)
+See more detailed `safety_gear_detector` demo [README Here](https://github.com/psakamoori/openvino_demos/blob/main/safety_gear_detector/application/README.md)
 ```sh
 # Assuming you activated openvino_env virtual env and inside openvino_demos directory.
 (openvino_env) [ubuntu:~/openvino_demos]$
